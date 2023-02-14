@@ -32,35 +32,54 @@ class King extends Piece {
   }
 }
 
-// ...
-class Queen extends Piece {}
-class Bishop extends Piece {}
-class Knight extends Piece {}
-class Rook extends Piece {}
-class Pawn extends Piece {}
+// Stubbed figures
+class Queen extends Piece {
+  canMoveTo(position: Position) {
+    return true;
+  }
+}
+class Bishop extends Piece {
+  canMoveTo(position: Position) {
+    return true;
+  }
+}
+class Knight extends Piece {
+  canMoveTo(position: Position) {
+    return true;
+  }
+}
+class Rook extends Piece {
+  canMoveTo(position: Position) {
+    return true;
+  }
+}
+class Pawn extends Piece {
+  canMoveTo(position: Position) {
+    return true;
+  }
+}
 
 // Represents a chess game
 class Game {
-    private pieces = Game.makePieces()
-  
-    private static makePieces() {
-      return [
-  
-        // Kings
-        new King('White', 'E', 1),
-        new King('Black', 'E', 8),
-  
-        // Queens
-        new Queen('White', 'D', 1),
-        new Queen('Black', 'D', 8),
-  
-        // Bishops
-        new Bishop('White', 'C', 1),
-        new Bishop('White', 'F', 1),
-        new Bishop('Black', 'C', 8),
-        new Bishop('Black', 'F', 8),
-  
-        // ...
-      ]
-    }
+  private pieces = Game.makePieces();
+
+  private static makePieces() {
+    return [
+      // Kings
+      new King("White", "E", 1),
+      new King("Black", "E", 8),
+
+      // Queens
+      new Queen("White", "D", 1),
+      new Queen("Black", "D", 8),
+
+      // Bishops
+      new Bishop("White", "C", 1),
+      new Bishop("White", "F", 1),
+      new Bishop("Black", "C", 8),
+      new Bishop("Black", "F", 8),
+
+      // ...
+    ];
   }
+}
